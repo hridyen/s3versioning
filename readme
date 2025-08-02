@@ -1,0 +1,30 @@
+# 🪣 S3 Bucket Versioning - Simple Project
+
+This repository demonstrates how to enable and test Versioning in an Amazon S3 Bucket.
+
+## 📌 What is Versioning?
+
+S3 Versioning allows you to preserve, retrieve, and restore every version of every object stored in a bucket. Once enabled, even deletes or overwrites do not permanently remove the data 
+they just create new versions.
+
+---
+
+## ✅ Steps Performed
+
+1. **Created an S3 Bucket**
+2. **Enabled Versioning** in the bucket properties
+3. **Uploaded multiple versions** of the same object (by uploading a file with the same name)
+4. **Viewed object versions** from the "Versions" tab in the bucket
+5. **Deleted a version** and observed that the object is not truly gone just marked with a delete marker
+6. **Restored previous versions** as needed
+
+---
+
+## 🔎 Use Case
+
+This feature is useful when:
+- You want to protect against accidental overwrites or deletions
+- You need to audit changes or roll back to a previous state
+- You're storing critical documents or media
+
+
